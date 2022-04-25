@@ -11,8 +11,8 @@
 }
 
 .logo{
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 8rem;
     margin: 38px 70px;
     background-color: transparent;
 }
@@ -34,20 +34,29 @@
     color: blue;
 }
 
-.button:hover{
-    color: blue;
-}
-
 #social-media:hover{
     color: blue;
 }
 
+.button:hover{
+    color: blue;
+}
+
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+
+/*================================================== HEAD ==================================================*/
 .pirmary-header{
     align-items: center;
     justify-content: space-between;
     background-color: black;
     width: auto;
-    height: 15vh;
+    height: auto;
 }
 
 .primary-navigation a{
@@ -56,7 +65,7 @@
    background-color: rgb(110, 110, 110);
    border-radius: 25px;
    color: white;
-   height: 15vh;
+   height: auto;
 }
 
 .primary-navigation{
@@ -67,19 +76,21 @@
     padding-right: 10rem;
 }
 
+.mainlogo{
+    background-color: transparent;
+}
+/*================================================== BODY ==================================================*/
 .description{
     background-color: transparent;
     width: auto;
-    height: 100%;
+    height: auto;
     gap: 10px;
-    padding-bottom: 2rem;
 }
 
 .profile{
     width: 10rem;
     height: 10rem;
-    margin: 5rem 5rem;
-    border-style: dotted;
+    margin: 5rem 2rem;
 }
 
 .basic-info{
@@ -87,7 +98,7 @@
     background-color: transparent;
     padding: 0;
     height: auto;
-    width: 20vw;
+    width: 25vw;
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
@@ -101,20 +112,93 @@
     padding-bottom: 2rem;
 }
 
-.book{
-    width: min(100%, 75%);
-    height: 100%;
-    margin: 0% 15%;
+.release{
+    padding-top: 3rem;
+    
+    border-left: 2px solid black;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents{
+    display: flex;
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+    justify-content: center;
+    height: auto;
     
 }
 
+h1{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h2{
+    text-align: left;
+    padding: 0rem 5rem;
+}
+
+p.intro{
+    margin-top: 2rem;
+    text-align: justify;
+    font-style: italic;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+}
+
+.text-column{
+    padding-top: 0rem;
+    
+}
+
+.refer{
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 1rem 5rem;
+}
+
+.book-cover{
+    width: 20rem;
+    
+    height: 25rem;
+
+    margin-left: 1rem ;
+    /* margin-top: 3rem; */
+
+    border-style: solid;
+    border-width: 0.1rem;
+}
+
 .read{
-    display: flex;
     width: 100%;
     height: 85vh;
-    background-color: transparent;
-    border-left: solid 1px;
-    border-radius: 15px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    
+    
+}
+
+.readnow{
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #ff0000;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:10px 50px;
+    cursor: pointer;
+    border-radius: 15px; 
 }
 
 /*================================================== footer ==================================================*/
@@ -167,44 +251,94 @@
 
 /* medium */
 @media (min-width: 35em) and (max-width: 60em){
+
     .pirmary-header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
         height: 300px;
     }
 
     .logo{
-        width: 5rem;
-        height: 5rem;
+        width: 6rem;
+        height: 6rem;
         margin: 0;
         background-color: transparent;
     }
 
     .primary-navigation {
       flex-direction: row;
-      gap: 1rem 5rem;
+      background-color:transparent;
+      gap: 0rem 3rem;
       padding-right: 0rem;
     }
 
     .basic-info{
-        display: none;
         width: 50%;
     }
 
-    .book{
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-    
-    .read{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 85vh;
+    .profile{
+        width: 7rem;
+        height: 10rem;
+        margin: 3rem 3rem;
     }
 
+    .description{
+        height: auto;
+    }
+
+    .contents{
+        margin-top: 0rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0rem 1rem;
+    }
+
+    .text-column{
+        padding-top: 0rem;
+    }
+
+    .release{
+        padding-top: 2rem;
+
+        border-left: 2px solid black;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p.intro{
+        margin-top: 0rem;
+        text-align: justify;
+        font-style: italic;
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+    }
+
+
+    .book-cover{
+        width: 15rem;
+        height: 15rem;
+        height: auto;
+        margin: 0rem;
+        border-style: solid;
+        border-width: 0.1rem;
+    }
+
+    h1{
+        display: block;
+        height: auto;
+    }
+
+    /* =============footer========== */
     .footer-navigation{
         font-size: 1rem;
         --gap:1rem;
@@ -224,7 +358,6 @@
     
 
     .pirmary-header{
-        flex-wrap: wrap;
         flex-direction: column;
         
         align-items: center;
@@ -234,14 +367,15 @@
     }
 
     h1{
-        margin-bottom: 3rem;
+        display: block;
         height: auto;
+        padding-bottom: 0rem;
     }
     
 
     .logo{
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
         margin: 0;
         background-color: transparent;
     }
@@ -252,31 +386,60 @@
       padding-right: 0rem;
     }
 
+    .primary-navigation a{
+        text-decoration: none;
+        padding: 8px;
+        background-color: rgb(110, 110, 110);
+        border-radius: 25px;
+        color: white;
+        height: auto;
+    }
+
+    
     .basic-info{
         display: none;
     }
 
+    .profile{
+        width: 7rem;
+        height: 10rem;
+        margin: 3rem 3rem;
+    }
+
+    .description{
+        height: auto;
+    }
+
     .contents{
-        flex-direction: column;
-        margin-top: 0.7rem;
+        margin-top: 0rem;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        
+        height: auto;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0rem 1rem;
+    }
+
+    .text-column{
+        padding-top: 0rem;
     }
 
     .release{
         padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
+
         border-left: 2px solid black;
-        height: 100vh;
+        height: auto;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
     p.intro{
-        margin-top: 2rem;
+        margin-top: 0rem;
         text-align: justify;
         font-style: italic;
         padding: 1rem 1rem;
@@ -286,35 +449,35 @@
 
     .book-cover{
         width: 15rem;
-        height: 20rem;
-        margin: 1rem ;
+        height: 15rem;
+        height: auto;
+        margin: 0rem;
         border-style: solid;
-        border-width: 0.5rem;
+        border-width: 0.1rem;
     }
 
-    .book{
-        width: 100%;
-        height: 100%;
-        margin: auto;
+    h1{
+        display: block;
+        height: auto;
     }
 
-    .read{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 85vh;
-    }
+    /* footer */
 
     .sticky-footer{
         position: sticky;
         top: 100%;
-        height: 5rem;
+        height: auto;
+
     }
     .footer-navigation{
         flex-direction: row;
+        flex-wrap: wrap;
         --gap:1.2rem;
+        background-color: #472828;
         font-size: 12px;
         column-count: 2;
         padding: 0%;
+        height: auto;
         
     }
 

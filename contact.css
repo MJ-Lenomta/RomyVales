@@ -11,8 +11,8 @@
 }
 
 .logo{
-    width: 5rem;
-    height: 5rem;
+    width: 8rem;
+    height: 8rem;
     margin: 38px 70px;
     background-color: transparent;
 }
@@ -42,12 +42,21 @@
     color: blue;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+/*================================================== HEAD ==================================================*/
 .pirmary-header{
     align-items: center;
     justify-content: space-between;
     background-color: black;
     width: auto;
-    height: 15vh;
+    height: auto;
 }
 
 .primary-navigation a{
@@ -56,7 +65,7 @@
    background-color: rgb(110, 110, 110);
    border-radius: 25px;
    color: white;
-   height: 15vh;
+   height: auto;
 }
 
 .primary-navigation{
@@ -65,6 +74,10 @@
     margin: 0;
     height: 0;
     padding-right: 10rem;
+}
+
+.mainlogo{
+    background-color: transparent;
 }
 
 .horizontal-line{
@@ -180,8 +193,8 @@ h1{
     }
 
     .logo{
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
         margin: 0;
         background-color: transparent;
     }
@@ -287,8 +300,8 @@ h1{
     
 
     .logo{
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
         margin: 0;
         background-color: transparent;
     }
@@ -298,6 +311,15 @@ h1{
       gap: 1rem;
       padding-right: 0rem;
     }
+
+    .primary-navigation a{
+        text-decoration: none;
+        padding: 8px;
+        background-color: rgb(110, 110, 110);
+        border-radius: 25px;
+        color: white;
+        height: auto;
+     }
 
     .basic-info{
         display: none;
@@ -354,14 +376,18 @@ h1{
         height: auto;
     }
 
+    /* footer */
+
     .sticky-footer{
         position: sticky;
         top: 100%;
-        height: 5rem;
+        height: 10rem;
     }
     .footer-navigation{
         flex-direction: row;
+        flex-wrap: wrap;
         --gap:1.2rem;
+        background-color: #472828;
         font-size: 12px;
         column-count: 2;
         padding: 0%;

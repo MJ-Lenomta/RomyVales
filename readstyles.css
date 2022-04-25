@@ -17,7 +17,7 @@
     background-color: transparent;
 }
 
-#about{
+#books{
     color: blue;
 }
 
@@ -82,15 +82,15 @@ body{
 .description{
     background-color: transparent;
     width: auto;
-    height: auto;
+    height: 100%;
     gap: 10px;
+    padding-bottom: 2rem;
 }
 
 .profile{
     width: 10rem;
     height: 10rem;
     margin: 5rem 5rem;
-    border-style: dotted;
 }
 
 .basic-info{
@@ -98,7 +98,7 @@ body{
     background-color: transparent;
     padding: 0;
     height: auto;
-    width: 50vw;
+    width: 25vw;
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
@@ -112,86 +112,20 @@ body{
     padding-bottom: 2rem;
 }
 
-.release{
-    padding: 3rem 0rem;
-    
-    /* display: flex;
-    flex-direction: column; */
-    border-left: 2px solid black;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.contents{
-    display: flex;
-    margin-top: 0.7rem;
-    margin-right: 1rem;
-    justify-content: center;
-    height: 80vh;
-    
-}
-
-h1{
-    width: 100%;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-h2{
-    text-align: left;
-    padding: 0rem 5rem;
-}
-
-p.intro{
-    margin-top: 2rem;
-    text-align: justify;
-    font-style: italic;
-    padding: 1rem 3rem;
-    font-size: 25px;
-}
-
-.text-column{
-    padding-top: 0rem;
-    
-}
-
-.refer{
-    font-size: 1.2rem;
-    text-align: right;
-    padding: 1rem 5rem;
-}
-
-.book-cover{
-    width: 20rem;
-    
-    height: 20rem;
-
-    margin-left: 1rem ;
-    /* margin-top: 3rem; */
-
-    border-style: solid;
-    border-width: 0.1rem;
-}
-
 .book{
-    width: 100%;
+    width: min(100%, 75%);
     height: 100%;
+    margin: 0% 15%;
+    
 }
 
 .read{
+    display: flex;
     width: 100%;
     height: 85vh;
-    background-color: rgb(255, 0, 0);
-    text-align: center;
-    
-    
-}
-
-.readnow{
-    display: flex;
-    flex-direction: column;
+    background-color: transparent;
+    border-left: solid 1px;
+    border-radius: 15px;
 }
 
 /*================================================== footer ==================================================*/
@@ -245,20 +179,12 @@ p.intro{
 /* medium */
 @media (min-width: 35em) and (max-width: 60em){
     .pirmary-header{
-        flex-wrap: wrap;
         flex-direction: column;
-        
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 300px;
     }
-
-    h1{
-        display: block;
-        height: auto;
-    }
-    
 
     .logo{
         width: 8rem;
@@ -269,60 +195,25 @@ p.intro{
 
     .primary-navigation {
       flex-direction: row;
-      gap: 1rem;
+      gap: 1rem 5rem;
       padding-right: 0rem;
     }
 
     .basic-info{
         display: none;
+        width: 50%;
     }
 
-   
-    .contents{
-        flex-direction: column;
+    .book{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    
+    .read{
         flex-wrap: wrap;
-        margin-top: 0rem;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    h2{
-        text-align: center;
-        padding: 0rem 1rem;
-    }
-
-    .text-column{
-        padding-top: 0rem;
-    }
-
-    .release{
-        border-left: 2px solid black;
-        height: auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    p.intro{
-        text-align: justify;
-        font-style: italic;
-        padding: 0rem 1rem;
-        font-size: 1.2rem;
-    }
-
-
-    .book-cover{
-        width: 15rem;
-        height: 15rem;
-        height: auto;
-        border-style: solid;
-        border-width: 0.1rem;
-    }
-
-    h1{
-        display: block;
-        height: auto;
+        width: 100%;
+        height: 85vh;
     }
 
     .footer-navigation{
@@ -354,7 +245,7 @@ p.intro{
     }
 
     h1{
-        display: block;
+        margin-bottom: 3rem;
         height: auto;
     }
     
@@ -385,55 +276,55 @@ p.intro{
         display: none;
     }
 
-   
     .contents{
         flex-direction: column;
-        flex-wrap: wrap;
-        margin-top: 0rem;
+        margin-top: 0.7rem;
         justify-content: center;
         align-items: center;
-        height: auto;
-    }
-
-    h2{
-        text-align: center;
-        padding: 0rem 1rem;
-    }
-
-    .text-column{
-        padding-top: 0rem;
+        
     }
 
     .release{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
         border-left: 2px solid black;
-        height: auto;
+        height: 100vh;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
     p.intro{
+        margin-top: 2rem;
         text-align: justify;
         font-style: italic;
-        padding: 0rem 1rem;
+        padding: 1rem 1rem;
         font-size: 1.2rem;
     }
 
 
     .book-cover{
         width: 15rem;
-        height: 15rem;
-        height: auto;
+        height: 20rem;
+        margin: 1rem ;
         border-style: solid;
-        border-width: 0.1rem;
+        border-width: 0.5rem;
     }
 
-    h1{
-        display: block;
-        height: auto;
+    .book{
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
 
-   /* footer */
+    .read{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 85vh;
+    }
+
+    /* footer */
 
     .sticky-footer{
         position: sticky;
