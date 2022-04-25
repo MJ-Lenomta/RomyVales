@@ -79,6 +79,19 @@ body{
 .mainlogo{
     background-color: transparent;
 }
+
+.horizontal-line{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+.horizontal-line.b{
+    width: 80%;
+}
 /*================================================== BODY ==================================================*/
 .description{
     background-color: transparent;
@@ -90,7 +103,8 @@ body{
 .profile{
     width: 10rem;
     height: 10rem;
-    margin: 5rem 2rem;
+    margin: 3rem 0rem;
+    align-self: center;
 }
 
 .basic-info{
@@ -98,10 +112,12 @@ body{
     background-color: transparent;
     padding: 0;
     height: auto;
-    width: 25vw;
+    width: 20vw;
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
+    align-content: center;
+    text-align: center;
 
 }
 
@@ -114,7 +130,7 @@ body{
 
 .release{
     padding-top: 3rem;
-    
+    width: 100%;
     border-left: 2px solid black;
     height: fit-content;
     text-align: center;
@@ -128,6 +144,7 @@ body{
     margin-right: 1rem;
     justify-content: center;
     height: auto;
+    width: auto;
     
 }
 
@@ -278,9 +295,9 @@ p.intro{
     }
 
     .profile{
-        width: 7rem;
+        width: 10rem;
         height: 10rem;
-        margin: 3rem 3rem;
+        margin: 3rem 0rem;
     }
 
     .description{
